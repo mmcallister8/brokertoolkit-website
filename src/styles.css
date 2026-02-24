@@ -129,11 +129,6 @@ nav.nav-scrolled {
 .hero-sub { font-size: 1.15rem; color: #94a3b8; max-width: 640px; margin: 0 auto 2.5rem; line-height: 1.7; text-wrap: balance; }
 .hero-sub strong { color: #e2e8f0; }
 .hero-ctas { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-bottom: 3rem; }
-.hero-proof { display: flex; gap: 2.5rem; justify-content: center; align-items: center; flex-wrap: wrap; }
-.proof-item { text-align: center; }
-.proof-number { display: block; font-size: 1.5rem; font-weight: 800; color: #fff; }
-.proof-label { font-size: 0.8rem; color: #64748b; text-transform: uppercase; letter-spacing: 0.05em; }
-.proof-divider { width: 1px; height: 40px; background: rgba(76, 68, 211, 0.3); }
 
 /* === Sections === */
 .section { padding: 6rem 0; }
@@ -404,8 +399,6 @@ footer::before {
 
   .hero { padding: 8rem 0 4rem; }
   .hero-ctas { flex-direction: column; align-items: center; }
-  .hero-proof { gap: 1.5rem; }
-  .proof-divider { display: none; }
 
   .feature-detail { grid-template-columns: 1fr; gap: 2rem; }
   .feature-detail.reverse { direction: ltr; }
