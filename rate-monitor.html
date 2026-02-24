@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rate Monitor — 50-State Mortgage Rates | Broker Toolkit</title>
+  <meta name="description" content="Monitor live mortgage rates across all 50 states. Track 30Y Fixed, 15Y Fixed, FHA, and VA rates with daily change alerts. Built for mortgage professionals.">
+  <link rel="canonical" href="https://brokertoolkit.app/rate-monitor">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"></noscript>
+  <style>*,::after,::before{box-sizing:border-box;margin:0;padding:0}html{font-size:16px;-webkit-text-size-adjust:100%}body{font-family:Inter,system-ui,-apple-system,sans-serif;color:#e2e8f0;background:#0f172a;line-height:1.6;overflow-x:hidden}a{color:inherit;text-decoration:none}img{max-width:100%;height:auto;display:block}nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(15,23,42,.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid rgba(99,102,241,.15);transition:background .3s}.nav-inner{max-width:1200px;margin:0 auto;padding:0 1.5rem;height:64px;display:flex;align-items:center;justify-content:space-between}.logo{display:flex;align-items:center;gap:.5rem;font-weight:700;font-size:1.15rem;color:#fff}.logo-icon{color:#818cf8}.nav-links{display:flex;align-items:center;gap:1.75rem;font-size:.9rem;font-weight:500}.nav-links a{color:#94a3b8;transition:color .2s}.nav-links a.nav-active,.nav-links a:hover{color:#fff}.cta-nav{background:#6366f1;color:#fff!important;padding:.5rem 1.25rem;border-radius:8px;font-weight:600;transition:background .2s}.cta-nav:hover{background:#4f46e5}.cta-nav-outline{border:1px solid rgba(99,102,241,.4);color:#a5b4fc!important;padding:.45rem 1rem;border-radius:8px;transition:.2s}.cta-nav-outline:hover{border-color:#6366f1;color:#fff!important}.nav-hamburger{display:none;background:0 0;border:none;color:#fff;cursor:pointer}.hero{padding:8rem 0 5rem;text-align:center;background:linear-gradient(180deg,#0f172a 0,#1e1b4b 100%);position:relative;overflow:hidden}.hero::before{content:'';position:absolute;top:0;left:50%;transform:translateX(-50%);width:800px;height:800px;background:radial-gradient(circle,rgba(99,102,241,.15) 0,transparent 70%);pointer-events:none}.container{max-width:1200px;margin:0 auto;padding:0 1.5rem}@media(max-width:768px){.nav-links{display:none;position:absolute;top:64px;left:0;right:0;flex-direction:column;background:rgba(15,23,42,.98);padding:1.5rem;gap:1rem;border-bottom:1px solid rgba(99,102,241,.15)}.nav-links.open{display:flex}.nav-hamburger{display:block}}</style>
+  <link rel="preload" href="styles.css?v=f8b01456" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="styles.css?v=f8b01456"></noscript>
+<meta property="og:image" content="https://brokertoolkit.app/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://brokertoolkit.app/assets/og-image.png">
+</head>
+<body>
+<nav>
+  <div class="nav-inner">
+    <a href="/" class="logo">
+      <svg class="logo-icon" width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M16 3L2 14h4v13h8v-8h4v8h8V14h4L16 3z" fill="currentColor"/></svg>
+      <span class="logo-text">Broker Toolkit</span>
+    </a>
+    <div class="nav-links">
+      <a href="/" data-nav-id="home">Home</a>
+      <div class="nav-dropdown" data-nav-id="features" class="nav-active">
+        <a href="features" class="nav-dropdown-trigger">Features <svg width="10" height="6" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 4px;"><path d="M1 1l4 4 4-4"/></svg></a>
+        <div class="nav-dropdown-menu">
+          <a href="features">All Features</a>
+          <a href="newsletter-pro">Newsletter Pro</a>
+          <a href="activity-tracker">Activity Tracker</a>
+          <a href="rate-monitor">Rate Monitor</a>
+          <a href="loan-advisor">Loan Advisor</a>
+        </div>
+      </div>
+      <a href="pricing" data-nav-id="pricing">Pricing</a>
+      <a href="https://highlevelformortgagepros.com" target="_blank" rel="noopener" data-nav-id="community" class="cta-nav-outline">HL4MP Community</a>
+      <a href="https://my.brokertoolkit.app" class="cta-nav">Start Free Trial</a>
+    </div>
+    <button class="nav-hamburger" aria-label="Menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </div>
+</nav>
+
+
+<section class="tool-hero">
+  <div class="container">
+    <div class="tool-hero-content">
+      <div class="tool-badge">💰 Rate Monitor</div>
+      <h1>Every Rate. Every State.<br>One Dashboard.</h1>
+      <p>Stop checking multiple sites for today's rates. Rate Monitor pulls live mortgage rates across all 50 states with daily change tracking — so you're always prepared.</p>
+    </div>
+  </div>
+</section>
+
+<section class="screenshot-section">
+  <div class="container">
+    <div class="screenshot-frame">
+      <img src="assets/screenshots/rate-monitor.png" alt="Rate Monitor — Live Rates Dashboard" loading="lazy" width="1920" height="1080">
+    </div>
+  </div>
+</section>
+
+<section class="section section-dark">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Coverage</span>
+      <h2>Four Products. Fifty States.</h2>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card">
+        <h3>30-Year Fixed</h3>
+        <p>The benchmark rate. Track conventional 30-year fixed rates across every state you work in, updated daily with trend indicators.</p>
+      </div>
+      <div class="feature-card">
+        <h3>15-Year Fixed</h3>
+        <p>For borrowers looking to build equity faster. Compare 15-year rates across states and spot opportunities for your clients.</p>
+      </div>
+      <div class="feature-card">
+        <h3>30-Year FHA</h3>
+        <p>Government-backed rates that matter for first-time buyers and lower credit score borrowers. Always know where FHA rates stand.</p>
+      </div>
+      <div class="feature-card">
+        <h3>30-Year VA</h3>
+        <p>Serve your veteran clients better. Track VA rates by state so you can proactively reach out when rates move in their favor.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-light">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Features</span>
+      <h2>More Than Just Numbers</h2>
+    </div>
+    <div class="features-grid" style="max-width: 800px; margin: 0 auto;">
+      <div class="feature-card">
+        <h3>Daily Change Tracking</h3>
+        <p>Red and green trend arrows show you exactly how rates moved today. See at a glance which states went up, which went down, and by how much.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Multi-State Averages</h3>
+        <p>Working across state lines? See average rates across all your monitored states in the summary bar at the top of the dashboard.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Rate Alerts</h3>
+        <p>Get notified when rates move significantly. Recent Rate Alerts show you exactly what changed so you can reach out to the right borrowers at the right time.</p>
+      </div>
+      <div class="feature-card">
+        <h3>One-Click Refresh</h3>
+        <p>Pull the latest rates on demand. No waiting for end-of-day updates when you need current numbers for a pricing conversation.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-cta">
+  <div class="container">
+    <div class="cta-content">
+      <h2>Always Know Where Rates Stand</h2>
+      <p>The best loan officers are proactive about rates. Rate Monitor gives you the data to reach out before your borrowers even ask.</p>
+      <a href="https://my.brokertoolkit.app" class="btn btn-primary btn-lg">Start Free Trial</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="/" class="logo">
+        <svg class="logo-icon" width="28" height="28" viewBox="0 0 32 32" fill="none"><path d="M16 3L2 14h4v13h8v-8h4v8h8V14h4L16 3z" fill="currentColor"/></svg>
+        <span class="logo-text">Broker Toolkit</span>
+      </a>
+      <p>The all-in-one toolkit built specifically for mortgage professionals. AI newsletters, activity tracking, rate monitoring, and loan analysis — all for $97/mo.</p>
+      <div class="footer-powered-by">
+        <span>Powered by</span>
+        <a href="https://empowerlo.com" target="_blank" rel="noopener">Empower LO</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Tools</h4>
+      <a href="newsletter-pro">Newsletter Pro</a>
+      <a href="activity-tracker">Activity Tracker</a>
+      <a href="rate-monitor">Rate Monitor</a>
+      <a href="loan-advisor">Loan Advisor</a>
+    </div>
+    <div class="footer-col">
+      <h4>Product</h4>
+      <a href="features">Features</a>
+      <a href="pricing">Pricing</a>
+      <a href="https://my.brokertoolkit.app" target="_blank" rel="noopener">Login</a>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <a href="https://empowerlo.com" target="_blank" rel="noopener">Empower LO</a>
+      <a href="https://highlevelformortgagepros.com" target="_blank" rel="noopener">HL4MP Community</a>
+      <a href="privacy">Privacy Policy</a>
+      <a href="terms">Terms &amp; Conditions</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Empower LO LLC. All rights reserved.</span>
+  </div>
+</footer>
+
+
+<script src="main.js?v=bdbca41a" defer></script>
+</body>
+</html>
