@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://brokertoolkit.app/sitemap.xml
