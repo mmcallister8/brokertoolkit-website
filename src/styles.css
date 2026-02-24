@@ -39,7 +39,11 @@ nav {
   height: 64px; display: flex; align-items: center; justify-content: space-between;
 }
 .logo { display: flex; align-items: center; gap: 0.5rem; font-weight: 700; font-size: 1.15rem; color: #fff; }
-.logo-icon { color: #6e68e0; width: 36px; height: 36px; }
+.logo-icon { width: 36px; height: 36px; }
+.logo-color { display: none; }
+.logo-white { display: block; }
+nav.nav-scrolled .logo-color { display: block; }
+nav.nav-scrolled .logo-white { display: none; }
 nav.nav-scrolled {
   background: rgba(22, 37, 66, 0.95);
   backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
