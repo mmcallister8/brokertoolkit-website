@@ -39,7 +39,7 @@ nav {
   height: 64px; display: flex; align-items: center; justify-content: space-between;
 }
 .logo { display: flex; align-items: center; gap: 0.5rem; font-weight: 700; font-size: 1.15rem; color: #fff; }
-.logo-icon { width: 44px; height: 44px; }
+.logo-icon { width: 64px; height: 64px; }
 nav.nav-scrolled {
   background: rgba(22, 37, 66, 0.95);
   backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
