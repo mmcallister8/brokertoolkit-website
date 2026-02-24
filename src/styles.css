@@ -39,7 +39,7 @@ nav {
   height: 64px; display: flex; align-items: center; justify-content: space-between;
 }
 .logo { display: flex; align-items: center; gap: 0.5rem; font-weight: 700; font-size: 1.15rem; color: #fff; }
-.logo-icon { width: 40px; height: 40px; }
+.logo-icon { width: 44px; height: 44px; }
 nav.nav-scrolled {
   background: rgba(22, 37, 66, 0.95);
   backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
@@ -295,7 +295,7 @@ footer { background: #0a0f1e; border-top: 1px solid rgba(76, 68, 211, 0.1); padd
   .nav-links.open { display: flex; }
   nav:has(.nav-links.open) { background: rgba(22, 37, 66, 0.98); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
   .nav-hamburger { display: block; }
-  .logo-icon { width: 56px; height: 56px; }
+  .logo-icon { width: 72px; height: 72px; }
   .nav-dropdown-menu { position: static; transform: none; background: transparent; border: none; box-shadow: none; padding: 0 0 0 1rem; }
   .nav-dropdown:hover .nav-dropdown-menu { display: flex; }
 
