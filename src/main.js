@@ -18,16 +18,18 @@
     });
   }
 
-  // Scroll-based nav background
+  // Scroll-based nav background — starts transparent, solidifies on scroll
   const nav = document.querySelector('nav');
   if (nav) {
-    window.addEventListener('scroll', function () {
+    function updateNav() {
       if (window.scrollY > 50) {
-        nav.style.background = 'rgba(15, 23, 42, 0.98)';
+        nav.classList.add('nav-scrolled');
       } else {
-        nav.style.background = 'rgba(15, 23, 42, 0.92)';
+        nav.classList.remove('nav-scrolled');
       }
-    }, { passive: true });
+    }
+    updateNav();
+    window.addEventListener('scroll', updateNav, { passive: true });
   }
 
   // Fade-in on scroll
