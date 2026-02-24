@@ -143,11 +143,11 @@ nav.nav-scrolled {
   display: inline-block; color: #6e68e0; font-size: 0.8rem; font-weight: 700;
   text-transform: uppercase; letter-spacing: 0.15em; margin-bottom: 0.75rem;
 }
-.section-sub { color: #94a3b8; font-size: 1.05rem; margin-top: 1rem; line-height: 1.7; }
+.section-sub { color: #94a3b8; font-size: 1.05rem; margin-top: 1rem; line-height: 1.7; max-width: 640px; margin-left: auto; margin-right: auto; }
 
 /* === Feature Cards (grid) === */
 .features-grid {
-  display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  display: grid; grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
 }
 .feature-card {
