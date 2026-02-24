@@ -71,6 +71,9 @@ nav.nav-scrolled {
   background: #1e293b; border: 1px solid rgba(76, 68, 211, 0.2); border-radius: 12px;
   padding: 0.5rem; min-width: 200px; box-shadow: 0 20px 40px rgba(0,0,0,0.4);
 }
+.nav-dropdown-menu::before {
+  content: ''; position: absolute; top: -1rem; left: 0; right: 0; height: 1rem;
+}
 .nav-dropdown:hover .nav-dropdown-menu { display: flex; flex-direction: column; }
 .nav-dropdown-menu a {
   padding: 0.6rem 1rem; border-radius: 8px; font-size: 0.85rem;
