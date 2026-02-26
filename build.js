@@ -97,6 +97,14 @@ for (const page of pages) {
     content = content.replace('</head>', defaultOg + '\n</head>');
   }
 
+  // Google Tag Manager (head) — as high as possible
+  const gtmHead = `<!-- Google Tag Manager -->\n  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\n  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\n  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=\n  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);\n  })(window,document,'script','dataLayer','GTM-53N4ZRS3');</script>\n  <!-- End Google Tag Manager -->`;
+  content = content.replace('<head>', '<head>\n  ' + gtmHead);
+
+  // Google Tag Manager (noscript) — immediately after <body>
+  const gtmBody = `<!-- Google Tag Manager (noscript) -->\n<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-53N4ZRS3"\nheight="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>\n<!-- End Google Tag Manager (noscript) -->`;
+  content = content.replace(/<body([^>]*)>/, `<body$1>\n${gtmBody}`);
+
   // Preconnect hints
   const preconnects = `<link rel="preconnect" href="https://fonts.googleapis.com">\n  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>`;
   content = content.replace('<meta charset="UTF-8">', '<meta charset="UTF-8">\n  ' + preconnects);
