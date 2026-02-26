@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "description": "Site Assistant knowledge base — the AI reads this at the start of conversations and writes to it when it learns something new.",
+  "entries": [
+    {
+      "topic": "brand",
+      "learned": "2026-02-26",
+      "content": "Broker Toolkit brand: Navy #162542, Purple #4c44d3. Product by HighLevel for Mortgage Pros (HL4MP LLC). Price: $97/mo."
+    },
+    {
+      "topic": "build-system",
+      "learned": "2026-02-26",
+      "content": "Static site. src/pages/ + src/partials/ → node build.js → root HTML. Vercel auto-deploys on merge to main."
+    }
+  ]
+}

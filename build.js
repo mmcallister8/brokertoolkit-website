@@ -17,6 +17,9 @@ const PARTIALS_DIR = path.join(ROOT, 'src', 'partials');
 
 const navHtml = fs.readFileSync(path.join(PARTIALS_DIR, 'nav.html'), 'utf8');
 const footerHtml = fs.readFileSync(path.join(PARTIALS_DIR, 'footer.html'), 'utf8');
+const adminChat = fs.existsSync(path.join(PARTIALS_DIR, 'admin-chat.html'))
+  ? fs.readFileSync(path.join(PARTIALS_DIR, 'admin-chat.html'), 'utf8')
+  : null;
 
 // Load and minify critical CSS for inlining
 const criticalCssRaw = fs.readFileSync(path.join(ROOT, 'src', 'critical.css'), 'utf8');
@@ -74,8 +77,19 @@ for (const page of pages) {
     );
   }
 
-  content = content.replace('<!-- NAV -->', processedNav);
-  content = content.replace('<!-- FOOTER -->', processedFooter);
+  // Check for NO_NAV / NO_FOOTER directives
+  const noNav = /<!--\s*NO_NAV\s*-->/.test(content);
+  const noFooter = /<!--\s*NO_FOOTER\s*-->/.test(content);
+  content = content.replace(/<!--\s*NO_NAV\s*-->\s*/g, '');
+  content = content.replace(/<!--\s*NO_FOOTER\s*-->\s*/g, '');
+
+  if (!noNav) content = content.replace('<!-- NAV -->', processedNav);
+  if (!noFooter) content = content.replace('<!-- FOOTER -->', processedFooter);
+
+  // Inject admin chat widget (on all pages except admin itself)
+  if (adminChat && page !== 'admin.html') {
+    content = content.replace('</body>', adminChat + '\n</body>');
+  }
 
   // Replace styles.css with inline critical CSS + deferred full CSS
   const stylesHref = depth > 0 ? `${prefix}styles.css?v=${cssHash}` : `styles.css?v=${cssHash}`;
