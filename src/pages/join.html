@@ -8,346 +8,310 @@
   <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
   <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
   <title>Start Your Free Trial | Broker Toolkit</title>
-  <meta name="description" content="Start your free Broker Toolkit trial. One platform for AI newsletters, activity tracking, rate monitoring, and loan analysis.">
+  <meta name="description" content="Start your free Broker Toolkit trial. Get AI newsletters, activity tracking, rate monitoring, and loan analysis in one platform.">
+  <meta name="keywords" content="mortgage broker tools, loan officer toolkit, AI newsletter mortgage, rate monitor, activity tracker, loan advisor, HighLevel integration">
   <link rel="canonical" href="https://brokertoolkit.app/join">
   <meta property="og:title" content="Start Your Free Trial | Broker Toolkit">
   <meta property="og:description" content="Start your free Broker Toolkit trial in under a minute.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://brokertoolkit.app/join">
+  <meta property="og:image" content="https://brokertoolkit.app/joinassets/logo.png">
+  <meta property="og:site_name" content="Broker Toolkit">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Start Your Free Trial | Broker Toolkit">
   <meta name="twitter:description" content="Start your free Broker Toolkit trial in under a minute.">
+  <meta name="twitter:image" content="https://brokertoolkit.app/joinassets/logo.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Broker Toolkit",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web",
+    "url": "https://brokertoolkit.app",
+    "description": "All-in-one mortgage tools platform. AI newsletters, activity tracking, rate monitoring, and loan analysis — built for mortgage professionals.",
+    "offers": {
+      "@type": "Offer",
+      "price": "97",
+      "priceCurrency": "USD",
+      "priceValidUntil": "2027-12-31",
+      "availability": "https://schema.org/InStock"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "HL4MP LLC",
+      "url": "https://highlevelformortgagepros.com"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Broker Toolkit",
+    "url": "https://brokertoolkit.app",
+    "logo": "https://brokertoolkit.app/joinassets/logo.png",
+    "parentOrganization": {
+      "@type": "Organization",
+      "name": "HL4MP LLC",
+      "url": "https://highlevelformortgagepros.com"
+    }
+  }
+  </script>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"></noscript>
   <link rel="stylesheet" href="styles.css">
+
   <style>
-    .join-shell { min-height: 100vh; background: linear-gradient(180deg,#162542 0,#1a2040 60%,#162542 100%); }
-    .join-section { padding: 4.2rem 1.25rem; }
-    .join-container { max-width: 1100px; margin: 0 auto; }
-
-    .join-hero { display: grid; grid-template-columns: 1.15fr .85fr; gap: 2rem; align-items: center; }
-    .join-badge {
-      display: inline-block; background: rgba(76,68,211,.18); color: #a5b4fc;
-      padding: .35rem .65rem; border-radius: 999px; font-size: .78rem; font-weight: 700; letter-spacing: .02em;
-      margin-bottom: .9rem;
-    }
-    .join-hero h1 { font-size: clamp(2.2rem, 5vw, 3.3rem); margin-bottom: .9rem; }
-    .join-hero p { color: #cbd5e1; max-width: 57ch; margin-bottom: 1.2rem; }
-    .join-hero-ctas { display: flex; gap: .7rem; flex-wrap: wrap; }
-    .join-btn-primary, .join-btn-secondary {
-      border-radius: 10px; padding: .82rem 1.05rem; font-weight: 700; cursor: pointer; font-size: .92rem;
-    }
-    .join-btn-primary { border: none; color: #fff; background: linear-gradient(135deg,#4c44d3,#5b52e0); }
-    .join-btn-secondary { border: 1px solid rgba(110,92,231,.45); color: #c7d2fe; background: transparent; }
-
-    .join-price-card {
-      background: rgba(15,23,42,.72); border: 1px solid rgba(76,68,211,.25); border-radius: 16px;
-      padding: 1.3rem; box-shadow: 0 24px 70px rgba(0,0,0,.35);
-    }
-    .join-price-card h3 { margin-bottom: .35rem; font-size: 1.15rem; }
-    .join-price { font-size: 2.3rem; color: #fff; font-weight: 800; line-height: 1; margin: .8rem 0 .2rem; }
-    .join-price small { font-size: .95rem; color: #94a3b8; font-weight: 600; }
-    .join-price-note { color: #94a3b8; font-size: .85rem; }
-
-    .join-section-title { text-align: center; margin-bottom: 1.5rem; }
-    .join-section-title h2 { font-size: clamp(1.65rem, 3vw, 2.35rem); margin-bottom: .55rem; }
-    .join-section-title p { color: #94a3b8; max-width: 68ch; margin: 0 auto; }
-
-    .join-grid-4 { display: grid; grid-template-columns: repeat(4,1fr); gap: 1rem; }
-    .join-card {
-      background: rgba(15,23,42,.55); border: 1px solid rgba(76,68,211,.2); border-radius: 14px; padding: 1rem;
-    }
-    .join-card h3 { font-size: 1.05rem; margin-bottom: .45rem; }
-    .join-card p { color: #94a3b8; font-size: .9rem; }
-
-    .join-grid-2 { display: grid; grid-template-columns: repeat(2,1fr); gap: 1rem; }
-
-    .join-strip {
-      border: 1px solid rgba(76,68,211,.25); background: rgba(12,18,34,.6); border-radius: 14px; padding: 1.2rem;
-      display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
-    }
-    .join-strip p { color: #cbd5e1; }
-
-    .join-footer-links { margin-top: 2.2rem; display: flex; gap: 1rem; flex-wrap: wrap; }
-    .join-footer-links a { color: #94a3b8; font-size: .83rem; }
-
-    .modal-overlay {
-      position: fixed; inset: 0; background: rgba(2,6,23,.78); z-index: 80;
-      display: none; align-items: center; justify-content: center; padding: 1rem;
-    }
-    .modal-overlay.open { display: flex; }
-    .modal {
-      width: 100%; max-width: 520px; background: #0f172a; border: 1px solid rgba(76,68,211,.35);
-      border-radius: 16px; padding: 1.2rem 1.2rem 1rem;
-      box-shadow: 0 24px 90px rgba(0,0,0,.5);
-    }
-    .modal-head { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-bottom: .8rem; }
-    .modal-head h3 { font-size: 1.2rem; }
-    .modal-close { background: transparent; border: none; color: #94a3b8; font-size: 1.4rem; cursor: pointer; }
-
-    .join-field { margin-bottom: .9rem; }
-    .join-field label { display: block; color: #cbd5e1; font-weight: 600; font-size: .88rem; margin-bottom: .35rem; }
-    .join-field input {
-      width: 100%; padding: .8rem .85rem; background: #0b1220; border: 1px solid rgba(100,116,139,.45);
-      border-radius: 10px; color: #e2e8f0; font-size: .95rem;
-    }
-    .join-field input:focus { outline: none; border-color: #6e5ce7; box-shadow: 0 0 0 2px rgba(110,92,231,.2); }
-    .join-submit {
-      width: 100%; margin-top: .35rem; border: none; cursor: pointer;
-      background: linear-gradient(135deg,#4c44d3,#5b52e0); color: #fff;
-      padding: .9rem 1rem; border-radius: 10px; font-weight: 700; font-size: .95rem;
-    }
-    .join-submit:disabled { opacity: .65; cursor: not-allowed; }
-    .join-note { margin-top: .75rem; font-size: .78rem; color: #94a3b8; }
-    .join-status { margin-top: .85rem; font-size: .9rem; min-height: 1.25rem; }
-    .join-status.ok { color: #22c55e; }
-    .join-status.err { color: #f87171; }
-
-    @media (max-width: 980px) {
-      .join-grid-4 { grid-template-columns: repeat(2,1fr); }
-      .join-hero { grid-template-columns: 1fr; }
-    }
-    @media (max-width: 700px) {
-      .join-grid-2, .join-grid-4 { grid-template-columns: 1fr; }
-      .join-top-nav .nav-inner { padding: 0 1rem; }
-      .join-top-nav .nav-links { display: flex !important; }
-      .join-top-nav .cta-nav { padding: .45rem .95rem; }
-    }
+    .nav-links .cta-nav { border: none; cursor: pointer; }
+    .modal-overlay { position: fixed; inset: 0; background: rgba(2,6,23,.78); z-index: 200; display:none; align-items:center; justify-content:center; padding:1rem; }
+    .modal-overlay.open { display:flex; }
+    .modal { width:100%; max-width:520px; background:#0f172a; border:1px solid rgba(76,68,211,.35); border-radius:16px; padding:1.2rem 1.2rem 1rem; box-shadow:0 24px 90px rgba(0,0,0,.5); }
+    .modal-head { display:flex; align-items:center; justify-content:space-between; gap:1rem; margin-bottom:.8rem; }
+    .modal-head h3 { font-size:1.2rem; margin:0; }
+    .modal-close { background:transparent; border:none; color:#94a3b8; font-size:1.4rem; cursor:pointer; }
+    .join-field { margin-bottom:.9rem; }
+    .join-field label { display:block; color:#cbd5e1; font-weight:600; font-size:.88rem; margin-bottom:.35rem; }
+    .join-field input { width:100%; padding:.8rem .85rem; background:#0b1220; border:1px solid rgba(100,116,139,.45); border-radius:10px; color:#e2e8f0; font-size:.95rem; }
+    .join-field input:focus { outline:none; border-color:#6e5ce7; box-shadow:0 0 0 2px rgba(110,92,231,.2); }
+    .join-submit { width:100%; margin-top:.35rem; border:none; cursor:pointer; background:linear-gradient(135deg,#4c44d3,#5b52e0); color:#fff; padding:.9rem 1rem; border-radius:10px; font-weight:700; font-size:.95rem; }
+    .join-submit:disabled { opacity:.65; cursor:not-allowed; }
+    .join-note { margin-top:.75rem; font-size:.78rem; color:#94a3b8; }
+    .join-status { margin-top:.85rem; font-size:.9rem; min-height:1.25rem; }
+    .join-status.ok { color:#22c55e; }
+    .join-status.err { color:#f87171; }
   </style>
 </head>
 <body>
-  <div class="join-shell">
-    <nav class="join-top-nav">
-      <div class="nav-inner">
-        <a href="/" class="logo" aria-label="Broker Toolkit home">
-          <img class="logo-icon" src="assets/logo-icon.png" alt="Broker Toolkit">
-        </a>
-        <div class="nav-links">
-          <a href="#" class="cta-nav" data-open-trial>Start Free Trial</a>
-        </div>
-      </div>
-    </nav>
-
-    <main>
-      <section class="join-section" style="padding-top:6.6rem;">
-        <div class="join-container join-hero">
-          <div>
-            <span class="join-badge">Built for mortgage professionals</span>
-            <h1>One platform for the daily work that drives loan volume</h1>
-            <p>Broker Toolkit combines AI newsletter creation, activity accountability, live rate monitoring, and borrower-facing loan analysis in one place. No tool stack chaos. No disconnected workflows.</p>
-            <div class="join-hero-ctas">
-              <button class="join-btn-primary" type="button" data-open-trial>Start free trial</button>
-              <a class="join-btn-secondary" href="features">Explore features</a>
-            </div>
-          </div>
-
-          <aside class="join-price-card">
-            <h3>Everything included</h3>
-            <p class="join-price"><span>$97</span> <small>/month</small></p>
-            <p class="join-price-note">No annual contracts. Cancel anytime. Free trial available.</p>
-            <div style="height:1px;background:rgba(148,163,184,.22);margin:.9rem 0;"></div>
-            <p style="color:#cbd5e1;font-size:.9rem;line-height:1.45;">Replace multiple subscriptions with one tool built specifically for mortgage operators and loan officers.</p>
-          </aside>
-        </div>
-      </section>
-
-      <section class="join-section" style="padding-top:0;">
-        <div class="join-container">
-          <div class="join-section-title">
-            <h2>Four tools. One login. One workflow.</h2>
-            <p>A focused setup that helps you stay visible to your database, execute daily production habits, and create borrower-ready guidance faster.</p>
-          </div>
-
-          <div class="join-grid-4">
-            <article class="join-card">
-              <h3>Newsletter Pro</h3>
-              <p>AI-assisted newsletter creation for clients, prospects, and referral partners with content that sounds local and relevant.</p>
-            </article>
-            <article class="join-card">
-              <h3>Activity Tracker</h3>
-              <p>Track calls, talk-tos, appointments, leads, and apps against your production targets and daily standards.</p>
-            </article>
-            <article class="join-card">
-              <h3>Rate Monitor</h3>
-              <p>See live mortgage rates across 50 states with directional change context so you can communicate confidently.</p>
-            </article>
-            <article class="join-card">
-              <h3>Loan Advisor</h3>
-              <p>Generate side-by-side loan comparisons, break-even snapshots, and borrower-friendly analysis outputs.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="join-section" style="padding-top:0;">
-        <div class="join-container join-grid-2">
-          <article class="join-card">
-            <h3>Works with HighLevel</h3>
-            <p>If you run HighLevel, Broker Toolkit plugs in cleanly and supports white labels as well. Keep your CRM and workflows connected.</p>
-          </article>
-          <article class="join-card">
-            <h3>Works standalone too</h3>
-            <p>Not on HighLevel? Still works. Every major tool is usable as a standalone workflow in the app.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="join-section" style="padding-top:0; padding-bottom:3.2rem;">
-        <div class="join-container">
-          <div class="join-strip">
-            <div>
-              <h3 style="margin-bottom:.35rem;">Ready to start your trial?</h3>
-              <p>Get instant access and see the full platform in action.</p>
-            </div>
-            <button class="join-btn-primary" type="button" data-open-trial>Start free trial</button>
-          </div>
-
-          <div class="join-footer-links">
-            <a href="terms">Terms</a>
-            <a href="privacy">Privacy</a>
-          </div>
-        </div>
-      </section>
-    </main>
+<nav>
+  <div class="nav-inner">
+    <a href="/" class="logo" aria-label="Broker Toolkit home">
+      <img class="logo-icon" src="assets/logo-icon.png" alt="Broker Toolkit">
+    </a>
+    <div class="nav-links">
+      <button type="button" class="cta-nav js-open-trial">Start Free Trial</button>
+    </div>
   </div>
+</nav>
 
-  <div class="modal-overlay" id="trialModal" aria-hidden="true">
-    <section class="modal" role="dialog" aria-modal="true" aria-labelledby="trial-modal-title">
-      <div class="modal-head">
-        <h3 id="trial-modal-title">Start your free trial</h3>
-        <button class="modal-close" type="button" id="closeModal" aria-label="Close">×</button>
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-badge">Built for Mortgage Professionals</div>
+      <h1>Stop Paying for 5 Tools When You Only Need One</h1>
+      <p class="hero-sub">Replace <strong>$500–1,000+/mo</strong> in scattered subscriptions with one powerful platform. AI-generated newsletters, daily activity tracking, 50-state rate monitoring, and professional loan analysis — all for <strong>$97/mo</strong>.</p>
+      <div class="hero-ctas">
+        <button type="button" class="btn btn-primary btn-lg js-open-trial">Start Free Trial</button>
+        <a href="features" class="btn btn-outline btn-lg">See All Features</a>
       </div>
-
-      <form id="trial-signup-form" novalidate>
-        <div class="join-field">
-          <label for="firstName">First name *</label>
-          <input id="firstName" name="firstName" type="text" autocomplete="given-name" required>
-        </div>
-        <div class="join-field">
-          <label for="lastName">Last name *</label>
-          <input id="lastName" name="lastName" type="text" autocomplete="family-name" required>
-        </div>
-        <div class="join-field">
-          <label for="email">Work email *</label>
-          <input id="email" name="email" type="email" autocomplete="email" required>
-        </div>
-        <div class="join-field">
-          <label for="companyName">Company name (optional)</label>
-          <input id="companyName" name="companyName" type="text" autocomplete="organization">
-        </div>
-
-        <button class="join-submit" id="submitBtn" type="submit">Start free trial</button>
-        <div class="join-status" id="joinStatus" aria-live="polite"></div>
-        <p class="join-note">By submitting, you agree to our terms and privacy policy.</p>
-      </form>
-    </section>
+    </div>
   </div>
+</section>
 
-  <script>
-    (function() {
-      const modal = document.getElementById('trialModal');
-      const form = document.getElementById('trial-signup-form');
-      const statusEl = document.getElementById('joinStatus');
-      const submitBtn = document.getElementById('submitBtn');
-      const closeModalBtn = document.getElementById('closeModal');
-      const openButtons = Array.from(document.querySelectorAll('[data-open-trial]'));
+<!-- ============ PROBLEM ============ -->
+<section class="section section-dark">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">The Problem</span>
+      <h2>Your Monthly Tool Stack Is Bleeding You Dry</h2>
+      <p class="section-sub">Newsletter service. Activity tracker. Rate alert tool. Loan comparison calculator. That's 4+ subscriptions, 4+ logins, and $500–1,000+ per month before you've closed a single loan.</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></div>
+        <h3>Newsletter Fatigue</h3>
+        <p>You know you should be sending newsletters to stay top of mind. But writing them from scratch every week? Nobody has time for that. So they don't get sent.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/></svg></div>
+        <h3>No Accountability</h3>
+        <p>You know the daily activities that lead to closings — calls, talk-tos, appointments. But without tracking, it's easy to let days slip by without hitting your numbers.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+        <h3>Rate Alert Chaos</h3>
+        <p>You're checking rates across multiple states on multiple sites. There's no single place to see today's rates, track changes, and alert your borrowers. So you don't.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-      const params = new URLSearchParams(window.location.search);
-      const attribution = {
-        utm_source: params.get('utm_source') || '',
-        utm_medium: params.get('utm_medium') || '',
-        utm_campaign: params.get('utm_campaign') || '',
-        utm_content: params.get('utm_content') || '',
-        utm_term: params.get('utm_term') || ''
-      };
+<!-- ============ TOOLS OVERVIEW ============ -->
+<section class="section section-light">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">The Solution</span>
+      <h2>Four Powerful Tools. One Simple Platform.</h2>
+      <p class="section-sub">Everything a mortgage professional needs to stay productive, stay visible, and close more loans — without the tool sprawl.</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"/><path d="M18 14h-8"/><path d="M15 18h-5"/><path d="M10 6h8v4h-8V6z"/></svg></div>
+        <h3>Newsletter Pro</h3>
+        <p>AI-generated, hyper-local newsletters for prospects, clients, and referral partners. Choose your audience, pick your market, and let AI create engaging content in minutes.</p>
+        <a href="newsletter-pro" class="learn-more-link">Learn more →</a>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/></svg></div>
+        <h3>Activity Tracker</h3>
+        <p>Track calls, talk-tos, appointments, leads, apps, and social engagement against daily and weekly goals. The daily disciplines that separate top producers from everyone else.</p>
+        <a href="activity-tracker" class="learn-more-link">Learn more →</a>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+        <h3>Rate Monitor</h3>
+        <p>Live mortgage rates across 50 states for Conventional, FHA, and VA. Track daily changes with trend arrows and alerts so you always know where rates stand.</p>
+        <a href="rate-monitor" class="learn-more-link">Learn more →</a>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
+        <h3>Loan Advisor</h3>
+        <p>Side-by-side loan comparisons, refinance break-even analysis, and cash-out benefit calculators. Professional tools you can share directly with borrowers.</p>
+        <a href="loan-advisor" class="learn-more-link">Learn more →</a>
+      </div>
+    </div>
+  </div>
+</section>
 
-      function track(eventName, extra) {
-        window.dataLayer = window.dataLayer || [];
-        window.dataLayer.push(Object.assign({
-          event: eventName,
-          page_type: 'join',
-          page_path: '/join'
-        }, attribution, extra || {}));
+<!-- ============ SCREENSHOTS ============ -->
+<section class="section section-dark">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">See It In Action</span>
+      <h2>A Real Look Inside Broker Toolkit</h2>
+    </div>
+    <div class="screenshot-frame" style="margin-bottom: 2rem;">
+      <img src="assets/screenshots/dashboard.png" alt="Broker Toolkit Dashboard — Newsletter Pro" loading="lazy" width="1920" height="1080">
+    </div>
+  </div>
+</section>
+
+<!-- ============ HIGHLEVEL INTEGRATION ============ -->
+<section class="section section-light">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Integrations</span>
+      <h2>Works With HighLevel.<br>Works Without It Too.</h2>
+      <p class="section-sub">Broker Toolkit integrates directly with any HighLevel instance — whether you're on your own account or a white-label like Empower LO, Rad CRM, or Cerberus. But you don't need HighLevel at all. Every tool works standalone.</p>
+    </div>
+    <div class="features-grid" style="max-width: 800px; margin: 0 auto;">
+      <div class="feature-card">
+        <h3>With HighLevel</h3>
+        <p>Send AI newsletters directly through your HighLevel email system. Sync contacts, trigger workflows, and keep everything in one CRM. Works with any GHL instance or white label.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Without HighLevel</h3>
+        <p>Not on HighLevel? No problem. Use Newsletter Pro, Activity Tracker, Rate Monitor, and Loan Advisor as standalone tools. No CRM required.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRICING PREVIEW ============ -->
+<section class="section section-dark" id="pricing">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Pricing</span>
+      <h2>One Plan. Everything Included.</h2>
+      <p class="section-sub">No tiers, no upsells, no per-tool pricing. Get every tool for one flat monthly price.</p>
+    </div>
+    <div class="pricing-grid">
+      <div class="pricing-card pricing-card-featured">
+        <div class="pricing-badge">All Access</div>
+        <div class="pricing-tier">Broker Toolkit</div>
+        <div class="pricing-price">
+          <span class="price-amount">$97</span>
+          <span class="price-period">/month</span>
+        </div>
+        <ul class="pricing-features">
+          <li><strong>Newsletter Pro</strong> — AI-generated local newsletters</li>
+          <li><strong>Activity Tracker</strong> — daily goal tracking & accountability</li>
+          <li><strong>Rate Monitor</strong> — 50-state live rate tracking</li>
+          <li><strong>Loan Advisor</strong> — comparison, refi & cash-out analysis</li>
+          <li>HighLevel integration (optional)</li>
+          <li>New tools added regularly</li>
+        </ul>
+        <button type="button" class="btn btn-accent btn-full js-open-trial">Start Free Trial</button>
+        <p class="pricing-note">Cancel anytime. No long-term contracts.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FINAL CTA ============ -->
+<section class="section section-cta">
+  <div class="container">
+    <div class="cta-content">
+      <h2>Ready to Simplify Your Stack?</h2>
+      <p>Stop juggling subscriptions. Get the tools you actually need — built specifically for mortgage professionals — in one place.</p>
+      <div class="hero-ctas">
+        <button type="button" class="btn btn-primary btn-lg js-open-trial">Start Free Trial</button>
+        <a href="pricing" class="btn btn-outline-light btn-lg">See Pricing Details</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<div class="modal-overlay" id="trialModal" aria-hidden="true">
+  <section class="modal" role="dialog" aria-modal="true" aria-labelledby="trial-modal-title">
+    <div class="modal-head">
+      <h3 id="trial-modal-title">Start your free trial</h3>
+      <button class="modal-close" type="button" id="closeModal" aria-label="Close">×</button>
+    </div>
+    <form id="trial-signup-form" novalidate>
+      <div class="join-field"><label for="firstName">First name *</label><input id="firstName" name="firstName" type="text" autocomplete="given-name" required></div>
+      <div class="join-field"><label for="lastName">Last name *</label><input id="lastName" name="lastName" type="text" autocomplete="family-name" required></div>
+      <div class="join-field"><label for="email">Work email *</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+      <div class="join-field"><label for="companyName">Company name (optional)</label><input id="companyName" name="companyName" type="text" autocomplete="organization"></div>
+      <button class="join-submit" id="submitBtn" type="submit">Start free trial</button>
+      <div class="join-status" id="joinStatus" aria-live="polite"></div>
+      <p class="join-note">By submitting, you agree to our terms and privacy policy.</p>
+    </form>
+  </section>
+</div>
+
+<!-- FOOTER -->
+
+
+<script>
+(function(){
+  const modal=document.getElementById('trialModal');
+  const form=document.getElementById('trial-signup-form');
+  const statusEl=document.getElementById('joinStatus');
+  const submitBtn=document.getElementById('submitBtn');
+  const closeModalBtn=document.getElementById('closeModal');
+  const openButtons=Array.from(document.querySelectorAll('.js-open-trial'));
+  const params=new URLSearchParams(window.location.search);
+  const attribution={utm_source:params.get('utm_source')||'',utm_medium:params.get('utm_medium')||'',utm_campaign:params.get('utm_campaign')||'',utm_content:params.get('utm_content')||'',utm_term:params.get('utm_term')||''};
+  function track(eventName,extra){window.dataLayer=window.dataLayer||[];window.dataLayer.push(Object.assign({event:eventName,page_type:'join',page_path:'/join'},attribution,extra||{}));}
+  function openModal(){modal.classList.add('open');modal.setAttribute('aria-hidden','false');setTimeout(()=>document.getElementById('firstName')?.focus(),10);track('trial_signup_modal_open');}
+  function closeModal(){modal.classList.remove('open');modal.setAttribute('aria-hidden','true');}
+  openButtons.forEach(btn=>btn.addEventListener('click',(e)=>{e.preventDefault();openModal();}));
+  closeModalBtn?.addEventListener('click',closeModal);
+  modal?.addEventListener('click',(e)=>{if(e.target===modal) closeModal();});
+  document.addEventListener('keydown',(e)=>{if(e.key==='Escape'&&modal.classList.contains('open')) closeModal();});
+  form?.addEventListener('submit',async(e)=>{
+    e.preventDefault();
+    const fd=new FormData(form);
+    const payload={email:String(fd.get('email')||'').trim(),firstName:String(fd.get('firstName')||'').trim(),lastName:String(fd.get('lastName')||'').trim(),companyName:String(fd.get('companyName')||'').trim()};
+    if(!payload.email||!payload.firstName||!payload.lastName){statusEl.textContent='Please complete all required fields.';statusEl.className='join-status err';track('trial_signup_validation_error',{reason:'missing_required_fields'});return;}
+    submitBtn.disabled=true;submitBtn.textContent='Submitting...';statusEl.textContent='';statusEl.className='join-status';track('trial_signup_submit',{has_company:!!payload.companyName});
+    try{
+      const res=await fetch('/api/trial-signup',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
+      const data=await res.json().catch(()=>({}));
+      if(!res.ok){
+        if(res.status===409){const signInUrl='https://my.brokertoolkit.app';statusEl.innerHTML=`An account with this email already exists. <a href="${signInUrl}" target="_blank" rel="noopener" style="color:#c7d2fe;text-decoration:underline;">Sign in here</a>.`;statusEl.className='join-status err';track('trial_signup_conflict',{has_company:!!payload.companyName});return;}
+        throw new Error(data.error||'Signup failed');
       }
+      track('trial_signup_success',{has_company:!!payload.companyName});statusEl.textContent='Success. Your free trial request was submitted.';statusEl.className='join-status ok';form.reset();
+    }catch(err){track('trial_signup_error',{error_message:err.message||'unknown_error'});statusEl.textContent='Sorry, we could not submit your request. Please try again.';statusEl.className='join-status err';}
+    finally{submitBtn.disabled=false;submitBtn.textContent='Start free trial';}
+  });
+})();
+</script>
 
-      function openModal() {
-        modal.classList.add('open');
-        modal.setAttribute('aria-hidden', 'false');
-        setTimeout(() => document.getElementById('firstName')?.focus(), 10);
-        track('trial_signup_modal_open');
-      }
-
-      function closeModal() {
-        modal.classList.remove('open');
-        modal.setAttribute('aria-hidden', 'true');
-      }
-
-      openButtons.forEach(btn => btn.addEventListener('click', (e) => { e.preventDefault(); openModal(); }));
-      closeModalBtn.addEventListener('click', closeModal);
-      modal.addEventListener('click', (e) => {
-        if (e.target === modal) closeModal();
-      });
-      document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape' && modal.classList.contains('open')) closeModal();
-      });
-
-      form.addEventListener('submit', async (e) => {
-        e.preventDefault();
-
-        const formData = new FormData(form);
-        const payload = {
-          email: String(formData.get('email') || '').trim(),
-          firstName: String(formData.get('firstName') || '').trim(),
-          lastName: String(formData.get('lastName') || '').trim(),
-          companyName: String(formData.get('companyName') || '').trim()
-        };
-
-        if (!payload.email || !payload.firstName || !payload.lastName) {
-          statusEl.textContent = 'Please complete all required fields.';
-          statusEl.className = 'join-status err';
-          track('trial_signup_validation_error', { reason: 'missing_required_fields' });
-          return;
-        }
-
-        submitBtn.disabled = true;
-        submitBtn.textContent = 'Submitting...';
-        statusEl.textContent = '';
-        statusEl.className = 'join-status';
-
-        track('trial_signup_submit', { has_company: !!payload.companyName });
-
-        try {
-          const res = await fetch('/api/trial-signup', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(payload)
-          });
-
-          const data = await res.json().catch(() => ({}));
-
-          if (!res.ok) {
-            if (res.status === 409) {
-              const signInUrl = 'https://my.brokertoolkit.app';
-              statusEl.innerHTML = `An account with this email already exists. <a href="${signInUrl}" target="_blank" rel="noopener" style="color:#c7d2fe;text-decoration:underline;">Sign in here</a>.`;
-              statusEl.className = 'join-status err';
-              track('trial_signup_conflict', { has_company: !!payload.companyName });
-              return;
-            }
-            throw new Error(data.error || 'Signup failed');
-          }
-
-          track('trial_signup_success', { has_company: !!payload.companyName });
-          statusEl.textContent = 'Success. Your free trial request was submitted.';
-          statusEl.className = 'join-status ok';
-          form.reset();
-        } catch (err) {
-          track('trial_signup_error', { error_message: err.message || 'unknown_error' });
-          statusEl.textContent = 'Sorry, we could not submit your request. Please try again.';
-          statusEl.className = 'join-status err';
-        } finally {
-          submitBtn.disabled = false;
-          submitBtn.textContent = 'Start free trial';
-        }
-      });
-    })();
-  </script>
+<script src="main.js" defer></script>
 </body>
 </html>
