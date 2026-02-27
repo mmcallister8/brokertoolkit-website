@@ -36,17 +36,17 @@
       border-bottom: 1px solid rgba(76,68,211,.18);
     }
     .join-nav-inner {
-      max-width: 1100px; margin: 0 auto; padding: .85rem 1.25rem;
+      max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; height: 64px;
       display: flex; align-items: center; justify-content: space-between;
     }
-    .join-logo img { width: 40px; height: 40px; }
-    .join-nav-links { display: flex; align-items: center; gap: 1.1rem; }
-    .join-nav-link { color: #94a3b8; font-size: .9rem; font-weight: 600; }
-    .join-nav-link:hover { color: #fff; }
+    .join-logo img { width: 44px; height: 44px; }
     .join-nav-cta {
       background: linear-gradient(135deg,#4c44d3,#5b52e0); color: #fff; border: none;
-      padding: .58rem .95rem; border-radius: 9px; font-size: .88rem; font-weight: 700; cursor: pointer;
+      padding: .5rem 1.25rem; border-radius: 8px; font-size: .9rem; font-weight: 600; cursor: pointer;
+      box-shadow: 0 2px 8px rgba(76,68,211,.3);
+      transition: .25s;
     }
+    .join-nav-cta:hover { background: linear-gradient(135deg,#5b52e0,#6e5ce7); transform: translateY(-1px); }
 
     .join-section { padding: 4.2rem 1.25rem; }
     .join-container { max-width: 1100px; margin: 0 auto; }
@@ -135,9 +135,8 @@
     }
     @media (max-width: 700px) {
       .join-grid-2, .join-grid-4 { grid-template-columns: 1fr; }
-      .join-nav-inner { padding-left: .9rem; padding-right: .9rem; }
-      .join-nav-links { gap: .55rem; }
-      .join-nav-link { display: none; }
+      .join-nav-inner { padding: 0 1rem; }
+      .join-nav-cta { padding: .5rem 1rem; font-size: .86rem; }
     }
   </style>
 <meta property="og:image" content="https://brokertoolkit.app/assets/og-image.png">
@@ -157,12 +156,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <a class="join-logo" href="/" aria-label="Broker Toolkit home">
           <img src="assets/logo-icon.png" alt="Broker Toolkit">
         </a>
-        <div class="join-nav-links">
-          <a class="join-nav-link" href="features">Features</a>
-          <a class="join-nav-link" href="pricing">Pricing</a>
-          <a class="join-nav-link" href="https://my.brokertoolkit.app">Sign in</a>
-          <button class="join-nav-cta" type="button" data-open-trial>Start free trial</button>
-        </div>
+        <button class="join-nav-cta" type="button" data-open-trial>Start free trial</button>
       </div>
     </header>
 
