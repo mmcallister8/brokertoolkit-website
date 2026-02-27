@@ -28,18 +28,38 @@ module.exports = async function handler(req, res) {
   }
 
   try {
-    const rbacRes = await fetch(
-      `https://hq.empowerlo.com/api/rbac/check?user_id=${user.id}&module=website-admin.broker-toolkit`,
-      { headers: { Authorization: `Bearer ${RBAC_SECRET}` } }
-    );
+    // Try BT-specific module first, then fall back to existing website-admin modules
+    // until HQ adds website-admin.broker-toolkit to its module registry.
+    const modulesToTry = [
+      'website-admin.broker-toolkit',
+      'website-admin.empower-lo',
+      'website-admin.hl4mp',
+      'website-admin'
+    ];
 
-    if (!rbacRes.ok) {
-      console.error('RBAC API error:', rbacRes.status);
-      return res.status(502).json({ error: 'RBAC check failed', allowed: false });
+    for (const moduleKey of modulesToTry) {
+      const rbacRes = await fetch(
+        `https://hq.empowerlo.com/api/rbac/check?user_id=${user.id}&module=${moduleKey}`,
+        { headers: { Authorization: `Bearer ${RBAC_SECRET}` } }
+      );
+
+      // Unknown module (400) -> try next fallback
+      if (rbacRes.status === 400) {
+        continue;
+      }
+
+      if (!rbacRes.ok) {
+        console.error('RBAC API error:', rbacRes.status, 'module:', moduleKey);
+        return res.status(502).json({ error: 'RBAC check failed', allowed: false });
+      }
+
+      const result = await rbacRes.json();
+      if (result.allowed === true) {
+        return res.status(200).json({ allowed: true });
+      }
     }
 
-    const result = await rbacRes.json();
-    return res.status(200).json({ allowed: result.allowed === true });
+    return res.status(200).json({ allowed: false });
   } catch (err) {
     console.error('RBAC check error:', err.message);
     return res.status(502).json({ error: 'RBAC check failed', allowed: false });
